@@ -6,7 +6,7 @@ horas_semana = float(input('Digite o número de horas de exercício físico por 
 MES = 30 #Atribuindo que um mês contém 30 dias
 
 horas_em_minutos = horas_semana*60 #Transformando as horas em minutos
-calorias_gasta = 5*horas_em_minutos*MES
+calorias_gasta = 5*horas_em_minutos*MES #Calculo
 
 
 print(f'O total de calorias gastas no mês foi de {calorias_gasta}')
