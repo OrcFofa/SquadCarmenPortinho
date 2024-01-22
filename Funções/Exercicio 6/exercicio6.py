@@ -11,45 +11,44 @@ import random
 
 def escolher_palavra():
     palavras = ["daniele", "alyne", "gessica", "laura", "renata", "thayna"]
-    indice_aleatorio = random.randint(0, len(palavras) - 1)
+    tam_lista = len(palavras)
+    indice_aleatorio = random.randint(0, tam_lista - 1)
     return palavras[indice_aleatorio]
 
 def exibir_palavra_oculta(palavra, letras_corretas):
-    resultado = ""
+    result = ""
     for letra in palavra:
         if letra in letras_corretas:
-            resultado += letra + ' '
+            result += letra 
         else:
-            resultado += '_ '
-    return resultado.strip()
+            result += '_'
+    return result.strip()
 
-def jogar_forca():
-    palavra_secreta = escolher_palavra()
-    letras_corretas = set()
-    tentativas_max = 6
 
-    print("Jogo de Forca")
+palavra_secret = escolher_palavra()
+letras_corretas = set()
+tentativas_max = 6
 
-    letras_unicas = set(palavra_secreta)
+print("Jogo de Forca")
 
-    while len(letras_corretas) < len(letras_unicas) and tentativas_max > 0:
-        print(exibir_palavra_oculta(palavra_secreta, letras_corretas))
-        
-        letra = input("Digite uma letra: ").lower()
+letras_unicas = set(palavra_secret)
 
-        if letra in letras_corretas:
-            print("Você já tentou essa letra. Tente outra.")
-        elif letra in letras_unicas:
-            letras_corretas.add(letra)
-            print("Letra correta!")
-        else:
-            tentativas_max -= 1
-            print(f"Letra incorreta. Tentativas restantes: {tentativas_max}")
+while len(letras_corretas) < len(letras_unicas) and tentativas_max > 0:
+    print(exibir_palavra_oculta(palavra_secret, letras_corretas))
+    
+    letra = input("Digite uma letra: ").lower()
 
-    if letras_corretas == letras_unicas:
-        print("Parabéns! Você adivinhou a palavra:", palavra_secreta)
+    if letra in letras_corretas:
+        print("Você já tentou essa letra.")
+    elif letra in letras_unicas:
+        letras_corretas.add(letra)
+        print("Correto!")
     else:
-        print("Você excedeu o número máximo de tentativas. A palavra secreta era:", palavra_secreta)
+        tentativas_max -= 1
+        print(f"Incorreto. Tentativas restantes: {tentativas_max}")
 
-if __name__ == "__main__":
-    jogar_forca()
+if letras_corretas == letras_unicas:
+    print("Parabéns! Você adivinhou a palavra:", palavra_secret)
+else:
+    print("Você excedeu o número de tentativas. Palavra secreta:", palavra_secret)
+
