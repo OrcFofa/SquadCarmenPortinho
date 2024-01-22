@@ -2,10 +2,10 @@
 
 > As listas de exercícios foram realizadas em branchs pelo grupo, segue os links:
 
-- [Conceitos Básicos de Python](https://github.com/OrcFofa/ExerciciosPython_SquadCarmenPortinho/tree/ConceitosBasicos_CarmenPortinho)
-- [Tomada de Decisão e Estruturas de Repetição](https://github.com/OrcFofa/ExerciciosPython_SquadCarmenPortinho/tree/DecisaoeRepeticao_CarmenPortinho)
-- [Listas, Tuplas e Dicionários](https://github.com/OrcFofa/ExerciciosPython_SquadCarmenPortinho/tree/ListaTuplasDicionarios_CarmenPortinho)
-- [Funções](https://github.com/OrcFofa/ExerciciosPython_SquadCarmenPortinho/tree/Funcao_CarmenPortinho)
+- [Conceitos Básicos de Python](https://github.com/OrcFofa/ExerciciosPython_SquadCarmenPortinho/tree/main/Conceitos%20B%C3%A1sicos%20de%20Python)
+- [Tomada de Decisão e Estruturas de Repetição](https://github.com/OrcFofa/ExerciciosPython_SquadCarmenPortinho/tree/main/Tomada%20de%20Decis%C3%A3o%20e%20Estruturas%20de%20Repeti%C3%A7%C3%A3o)
+- [Listas, Tuplas e Dicionários](https://github.com/OrcFofa/ExerciciosPython_SquadCarmenPortinho/tree/main/Listas%2C%20Tuplas%20e%20Dicion%C3%A1rios)
+- [Funções](https://github.com/OrcFofa/ExerciciosPython_SquadCarmenPortinho/tree/main/Fun%C3%A7%C3%B5es)
 
 
   
